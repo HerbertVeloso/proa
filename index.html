@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<title>PROA</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PROA</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header>
+	<header id="home">
 		<nav class="navbar">
 			<a class="navbar__link" href="#historia">História</a>
 			<a class="navbar__link" href="#midia">Midía</a>
@@ -19,15 +19,17 @@
 		</nav>
 	</header>
 	<main>
-		<section class="home" id="home">
-			<div class="overlay overlay--white">
-				<h1 class="title">
+		<section class="home">
+			<div class="overlay">
+				<h1 class="title title--center">
 					Prevenção Realizada com organização e amor
 				</h1>
 			</div>
 		</section>
 		<section class="history" id="historia">
-			<img class="logo" src="PROA-Assets/logo-proa-original.png" alt="logo da organização PROA (Prevenção Realizada com Amor),com o desenho do mapa do Brasil,com varias casinhas parecidas casas de favela">
+			<div class="column column--center">
+				<img class="logo" src="PROA-Assets/logo-proa-original.png" alt="logo da organização PROA (Prevenção Realizada com Amor),com o desenho do mapa do Brasil,com varias casinhas parecidas casas de favela">
+			</div>
 			<div class="column">
 				<p class="text">
 					O Grupo PROA (Prevenção Realizada com Organização e Amor) iniciou suas atividades em abril de 1998, na Comunidade do Morro dos Prazeres, no bairro de Santa Teresa, Rio de Janeiro, quando um grupo de amigos decidiu convencer os moradores da importância de se protegerem contra doenças sexualmente transmissíveis (DSTs). Munidos de um caderno com fotos e informações sobre DSTs, começaram a distribuir preservativos e a realizar um trabalho de conscientização e educação sexual. O PROA estabeleceu uma parceria - que se fortalece a cada ano - com a Unidade de Saúde local a fim de difundir informações sobre seus programas sanitários. 
@@ -35,7 +37,7 @@
 				<p class="text">
 					Com mais de 18 anos de muito trabalho, o grupo segue inovando na busca de temas para os encontros, nas formas de aconselhamento e capacitação, além da participação em movimentos sociais a fim de fortalecer as parecerias para melhorar a vida dos moradores da comunidade. </p>
 			</div>
-			<div class="column">
+			<div class="column column--left">
 				<img class="image" src="PROA-Fotos/multirao-limpeza.jpg" alt="3 pessoas revitalizando uma parede com o sibulo da reciclagem">
 				<img class="image" src="PROA-Fotos/roda-dialogo.jpg" alt="12 adultos e um criança estão em um circulo de dabate e ha uma mesa de café da manhã">
 				<img class="image" src="PROA-Fotos/Reciclacao04.jpg" alt="5 pessoas estão recolhendo o lixo reciclado,ha 3 sacos de garrafas pet prontos para trasporte">
@@ -57,17 +59,24 @@
 			<p></p>
 			<img src="">
 		</section>
-		<section>
+		<section id="midia">
 			<h1 class="title title--small">Mídia</h1>
 			<div>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/kMEXbvl0a7Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				<div>
-					<img src="">
-					<p></p>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/kMEXbvl0a7Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<p>Reciclação 2016</p>
 				</div>
 				<div>
-					<img src="">
-					<p></p>
+					<img src="PROA-Fotos/cris-multirio.png">
+					<p>
+						Aquela Conversa: Meu Ambiente, MultiRio
+					</p>
+				</div>
+				<div>
+					<img src="PROA-Fotos/agencia-brasil.png">
+					<p>
+						Projeto promove igualdade de gênero entre beneﬁciários do Bolsa Família, Agência Brasil
+					</p>
 				</div>
 			</div>
 		</section>
@@ -75,13 +84,13 @@
 	<footer>
 		<div class="overlay overlay--green">
 			<div>
-				<div>
+				<div id="contribua">
 					<h1>Você também pode colaborar com as ações do proa!</h1>
 					<p>
 						Nosso trabalho é voluntário, e por isso precisamos de apoio humano e financeiro para realizar nossas atividades. Você pode contribuir atráves de ações voluntárias, doações de materiais ou depósito bancário.
 					</p>
 				</div>
-				<div>
+				<div id="contato">
 					<h2>Entre em contato para saber mais</h2>
 					<ul>
 						<li>nucleoproa@yahoo.com.br</li>
@@ -92,7 +101,7 @@
 					<p>Rua Gomes Lopes, 12 fundos Morro dos Prazeres - Santa Tereza, RJ</p>
 				</div>
 			</div>
-			<img src="PROA-Assets/cris.png" alt="imagem da fundadora do PROA Cris ela veste uma camisa azul com pequenos detalhes rosa">
+			<!-- <img src="PROA-Assets/cris.png" alt="imagem da fundadora do PROA Cris ela veste uma camisa azul com pequenos detalhes rosa"> -->
 			<div>
 				<h2>Cris dos prazeres</h2>
 				<p>Iniciou as atividades do grupo que hoje conta com uma equipe de agentes comunitários voluntários.</p>

@@ -1,1 +1,83 @@
-style.css
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Roboto Slab', serif;
+}
+.navbar{
+	height: 15vh;
+	min-height: 64px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+.navbar__link{
+	margin: 0 1vw;
+	font-size: 18px;
+	font-weight: bolder;
+	color: #69B284;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.navbar__logo{
+	width: 80px;
+}
+
+.home{
+	height: 85vh; 
+	background: url(PROA-Assets/home.jpg) top no-repeat;
+	background-size: cover;
+}
+.overlay{
+	height: 100%;
+	width: 100%;
+	background: #FFFFFF70;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.title{
+	font-size: 3.2vw;
+	color: #FFF;
+	text-transform: uppercase;
+}
+.title--center{
+	width: 45vw;
+}
+
+.history{
+	height: 48vw;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+.logo{
+	width: 20vw;
+}
+.column{
+	height: 100%;
+	width: 33vw;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+}
+.column--center{
+	align-items: center;
+}
+.column--left{
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.image{
+	width: 25vw;
+	opacity: 0.5;
+}
+.text{
+	font-size: 1.2vw;
+	margin: 1vw 0;	
+}
