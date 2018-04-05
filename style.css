@@ -61,8 +61,6 @@ body{
 	width: 20vw;
 }
 .column{
-	height: 100%;
-	width: 33vw;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
@@ -77,6 +75,7 @@ body{
 }
 .image{
 	width: 25vw;
+	margin:2px 0;
 }
 .image--overlay{
 	opacity: 0.5;
@@ -96,8 +95,8 @@ body{
 
 }
 .button{
-	height: 9vw;
-	width: 9vw;
+	height: 7vw;
+	width: 7vw;
 	margin: 0.8vw;
 	padding: 0.9vw;
 	border: 1px #707070;
@@ -105,7 +104,7 @@ body{
 	background: #FD837E;
 	box-shadow: 1px 1px 5px #00000033;
 	font-family: 'Oswald', sans-serif;
-	font-size: 1.2vw;
+	font-size: 1vw;
 	font-weight: 700;
 	color:#FFF;
 	text-transform: uppercase;
@@ -116,8 +115,10 @@ body{
 
 }
 .display{
-	padding: 8vh 0 8vh 5vw;
+	padding: 8vh 0 8vh 3vw;
 	background: #FFF9BF;
+}
+.container{
 	display: none;
 }
 .active{
@@ -130,5 +131,6 @@ body{
 	color: #000;
 }
 .text--center{
-	width: 40vw;
+	width: 35vw;
+	margin: 0 2vw;
 }
