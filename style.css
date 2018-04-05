@@ -118,6 +118,9 @@ body{
 .display{
 	padding: 8vh 0 8vh 5vw;
 	background: #FFF9BF;
+	display: none;
+}
+.active{
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
