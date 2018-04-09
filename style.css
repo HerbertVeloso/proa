@@ -1,12 +1,24 @@
+ /* IMPORTANDO FONTES */
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto+Slab');
+/* RESET CSS */
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-body{
-	font-family: 'Roboto Slab', serif;
+/* CLASSES GERAIS */
+.overlay{
+	height: 100%;
+	width: 100%;
+	background: #FFFFFF70;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+.overlay--green{
+	background: #64B48670;
+}
+/* NAVBAR */
 .navbar{
 	height: 15vh;
 	min-height: 64px;
@@ -16,7 +28,8 @@ body{
 	align-items: center;
 }
 .navbar__link{
-	margin: 0 1vw;
+	margin: 0 1.5vw;
+	font-family: 'Oswald', sans-serif;
 	font-size: 18px;
 	font-weight: bolder;
 	color: #69B284;
@@ -26,64 +39,54 @@ body{
 .navbar__logo{
 	width: 80px;
 }
-
+/* HOME */
 .home{
 	height: 85vh; 
 	background: url(PROA-Assets/home.jpg) top no-repeat;
 	background-size: cover;
 }
-.overlay{
-	height: 100%;
-	width: 100%;
-	background: #FFFFFF70;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.title{
+.home__title{
+	width: 45vw;
 	font-family: 'Oswald', sans-serif;
 	font-size: 3.2vw;
 	color: #FFF;
 	text-transform: uppercase;
 }
-.title--center{
-	width: 45vw;
-}
-
+/* HISTORIA */
 .history{
-	height: 48vw;
 	display: flex;
 	flex-flow: row nowrap;
-	justify-content: center;
-	align-items: center;
-}
-.logo{
-	width: 20vw;
-}
-.column{
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
-}
-.column--center{
-	align-items: center;
-}
-.column--left{
 	justify-content: space-between;
-	align-items: flex-end;
-	padding: 1.5px 0;
+	align-items: center;
 }
-.image{
-	width: 25vw;
-	margin:2px 0;
+.history__logo{
+	width: 20vw;
+	margin-left: 5vw; 
 }
-.image--overlay{
-	opacity: 0.5;
-}
-.text{
+.history__text{
+	width: 38vw;
+	font-family: 'Roboto Slab', serif;
 	font-size: 1.2vw;
 	margin: 1vw 0;	
 }
+.history__gallery{
+	padding: 1px 0;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.history__image{
+	width: 26vw;
+	opacity: 0.6;
+}
+.history__image:first-child{
+	margin-bottom: 1vh;
+}
+.history__image:last-child{
+	margin-top: 1vh;
+}
+/* PAINEL */
 .panel{
 	padding: 6vh 0;
 	background:#64B486;
@@ -92,7 +95,6 @@ body{
 	flex-flow: row nowrap;
 	justify-content: center;
 	align-items: center;
-
 }
 .button{
 	height: 7vw;
@@ -112,14 +114,29 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 }
+/* DISPLAY */
 .display{
-	padding: 8vh 0 8vh 3vw;
+	padding: 8vh 0 8vh 5vw;
 	background: #FFF9BF;
 }
-.container{
+.display__container{
 	display: none;
+}
+.display__title{
+	width: 20vw;
+	font-family: 'Oswald', sans-serif;
+	font-size: 3.2vw;
+	text-transform: uppercase;
+}
+.display__text{
+	width: 30vw;
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.2vw;
+	margin: 1vw 0;	
+}
+.display__image{
+	width: 30vw;
 }
 .active{
 	display: flex;
@@ -127,10 +144,30 @@ body{
 	justify-content: space-between;
 	align-items: center;
 }
-.title--black{
-	color: #000;
+/* MÍDIA */
+.midia{
+	display: flex;
+	flex-flow: column nowrap;
 }
+/*
+.image{
+	width: 25vw;
+	margin:2px 0;
+}
+.image--overlay{
+	opacity: 0.5;
+}
+.text{
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.2vw;
+	margin: 1vw 0;	
+}
+
+
+
 .text--center{
 	width: 35vw;
 	margin: 0 2vw;
 }
+
+*/display__
