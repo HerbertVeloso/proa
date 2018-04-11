@@ -16,3 +16,8 @@ function display(value){
 	// 	top: '0'
 	// });
 }
+
+//Close
+$('.close').click(function(){
+	$('.display__container').removeClass("active");
+});

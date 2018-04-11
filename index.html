@@ -4,6 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>PROA</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.typekit.net/igg4ipr.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -41,7 +43,7 @@
 				<img class="history__image" src="PROA-Fotos/reciclacao04.jpg" alt="5 pessoas estão recolhendo o lixo reciclado,ha 3 sacos de garrafas pet prontos para trasporte">
 			</div>
 		</section>
-		<section>
+		<section class="panel-display">
 			<div class="panel">
 				<div class="button" onclick="display('cafe');">Café comunitário</div>
 				<div class="button" onclick="display('sensibilizacao');">Encontros de sensibilização</div>
@@ -56,7 +58,10 @@
 				<div class="button" onclick="display('reciclacao');">Reciclação</div>
 			</div>
 			<div class="display">
-				<div class="display__container active" id="cafe">
+				<div class="close">
+					<span class="fa fa-close"></span>
+				</div>
+				<div class="display__container" id="cafe">
 					<h1 class="display__title">Café comunitário</h1>
 					<p class="display__text">
 						Uma forma atraente e prazerosa de unir pessoas para discutir temas importantes sobre o desenvolvimento do território onde vivem. É um convite e uma oportunidade de gerar empatia e o desejo de participar das ações em benefício da comunidade.
@@ -161,18 +166,18 @@
 					<iframe class="midia__iframe" src="https://www.youtube.com/embed/kMEXbvl0a7Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 					<p class="midia__subtitle">Reciclação 2016</p>
 				</div>
-				<div class="midia__column">
+				<a class="midia__column" href="http://multirio.rio.rj.gov.br/index.php/assista/tv/9687-meu-ambiente">
 					<img class="midia__image" src="PROA-Assets/cris-multirio.png" alt="na imagem esta a fundadora do PROA Cris dando uma entrevista,para o MultiRio">
 					<p class="midia__subtitle">
 						Aquela Conversa: <br>Meu Ambiente, MultiRio
 					</p>
-				</div>
-				<div class="midia__column">
+				</a>
+				<a class="midia__column" href="http://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2016-07/projeto-promove-equidade-de-genero-entre-beneficiarios-do-bolsa">
 					<img class="midia__image" src="PROA-Assets/agencia-brasil.png" alt="roda de conversa sobre a equidade de gênero entre as atividades do Projeto Igualdade de Gẽnero">
 					<p class="midia__subtitle">
 						Projeto promove igualdade de gênero entre beneﬁciários do Bolsa Família, Agência Brasil
 					</p>
-				</div>
+				</a>
 			</div>
 		</section>
 	</main>
@@ -196,10 +201,12 @@
 					<p class="contact__text">Rua Gomes Lopes, 12 fundos<br> Morro dos Prazeres - Santa Tereza, RJ</p>
 				</div>
 			</div>
-			<img class="footer__image" src="PROA-Assets/cris.png" alt="imagem da fundadora do PROA Cris ela veste uma camisa azul com pequenos detalhes rosa">
-			<div class="footer__info">
-				<h2 class="footer__title">Cris dos prazeres</h2>
-				<p class="footer__text">Iniciou as atividades do grupo que hoje conta com uma equipe de agentes comunitários voluntários.</p>
+			<div class="footer__box">
+				<img class="footer__image" src="PROA-Assets/cris.png" alt="imagem da fundadora do PROA Cris ela veste uma camisa azul com pequenos detalhes rosa">
+				<div class="footer__info">
+					<h2 class="footer__title">Cris dos prazeres</h2>
+					<p class="footer__text">Iniciou as atividades do grupo que hoje conta com uma equipe de agentes comunitários voluntários.</p>
+				</div>
 			</div>
 		</div>
 	</footer>
