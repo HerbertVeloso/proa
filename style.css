@@ -41,6 +41,9 @@
 .navbar__logo{
 	width: 80px;
 }
+@media (max-width: 768px){
+
+}
 /* HOME */
 .home{
 	height: 85vh; 
@@ -108,7 +111,7 @@
 	background: #FD837E;
 	box-shadow: 1px 1px 5px #00000033;
 	font-family: 'Oswald', sans-serif;
-	font-size: 1vw;
+	font-size: 0.95vw;
 	font-weight: 700;
 	color:#FFF;
 	text-transform: uppercase;
@@ -116,14 +119,23 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	cursor: pointer;
+	transition: all 1s;
+}
+.button:hover{
+	transform: translateY(-20px);
+	box-shadow: 4px 8px 5px #00000033;
+}
+.button:active{
+	transform: rotate(90deg);
 }
 /* DISPLAY */
 .display{
-	padding: 8vh 0 8vh 5vw;
 	background: #FFF9BF;
 }
 .display__container{
 	display: none;
+	position: relative;
 }
 .display__title{
 	width: 20vw;
@@ -137,10 +149,21 @@
 	font-size: 1.2vw;
 	margin: 1vw 0;	
 }
+.display__text--list{
+	margin: 2vw 0 0.5vw;
+}
+.display__list{
+	list-style: none;
+}
+.display__list-item{
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.2vw;
+}
 .display__image{
 	width: 30vw;
 }
 .active{
+	padding: 8vh 0 8vh 5vw;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
@@ -196,7 +219,6 @@
 }
 /* FOOTER */
 .footer{
-	height: 90vh;
 	background: url(PROA-Assets/footer.jpg) top no-repeat;
 	background-size: cover;
 	position: relative;
@@ -204,7 +226,7 @@
 }
 .footer__column{
 	width: 35vw;
-	margin: 0 5vw;
+	margin: 10vh 5vw 15vh;
 }
 .contribute__title{
 	margin-bottom: 3vh;
@@ -232,7 +254,7 @@
 	font-size: 1.5vw;
 }
 .contact__text{
-	margin: 4vh 0 15vh;
+	margin: 4vh 0 0;
 	font-family: 'Roboto Slab', serif;
 	font-size: 1.5vw;
 }

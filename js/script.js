@@ -7,3 +7,12 @@ $('.navbar__link').click(function(event){
         scrollTop: targetOffset
     }, 500);
 });
+
+//Display
+function display(value){
+	$('.display__container').removeClass("active");
+	$('#'+value).addClass("active");
+	// $('#'+value).addClass("active").animate({
+	// 	top: '0'
+	// });
+}
