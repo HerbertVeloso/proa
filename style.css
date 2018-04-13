@@ -30,7 +30,7 @@
 }
 .navbar__link{
 	margin: 0 1.5vw;
-	font-family: balboa-plus-fill, sans-serif;
+	font-family: 'balboa-plus-fill', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 3vh;
@@ -61,7 +61,7 @@
 }
 .home__title{
 	width: 37vw;
-	font-family: balboa-plus-fill, sans-serif;
+	font-family: 'balboa-plus-fill', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 4vw;
@@ -150,7 +150,7 @@
 	border-radius: 50%;
 	background: #FD837E;
 	box-shadow: 1px 1px 5px #00000033;
-	font-family: balboa-plus-fill, sans-serif;
+	font-family: 'balboa-plus-fill', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.1vw;
@@ -172,7 +172,7 @@
 }
 @media (max-width: 768px){
 	.panel{
-		height: 100vh;
+		height: auto;
 		flex-wrap: wrap;
 	}
 	.button{
@@ -196,7 +196,7 @@
 }
 .display__title{
 	width: 20vw;
-	font-family: balboa-plus-fill, sans-serif;
+	font-family: 'balboa-plus-fill', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 3.2vw;
@@ -230,6 +230,7 @@
 }
 @media (max-width: 768px){
 	.display{
+        height: 100%;
 		position: absolute;
 		z-index: 100;
 		top: 0;
@@ -241,9 +242,10 @@
 		z-index: 200;
 		top: 3vh;
 		right: 3vh;
+        cursor: pointer;
 	}
 	.display__container{
-		height: 100vh;
+		height: 100%;
 		width: 100vw;
 	}
 	.display__title{
@@ -280,7 +282,7 @@
 }
 .midia__title{
 	margin-bottom: 5vh;
-	font-family: balboa-plus-fill, sans-serif;
+	font-family: 'balboa-plus-fill', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 3vw;
@@ -310,7 +312,7 @@
 	color: #000;
 	display: flex;
 	flex-flow: column nowrap;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: flex-start;
 }
 .midia__image{
@@ -318,10 +320,10 @@
 }
 .midia__subtitle{
 	margin-top: 1vw;
-	font-family: filson-soft, sans-serif;
+	font-family: 'filson-soft', sans-serif;
 	font-style: normal;
 	font-weight: 500;
-	font-size: 1.2vw;
+	font-size: 1vw;
 }
 @media (max-width: 768px){
 	.midia{
@@ -360,7 +362,7 @@
 }
 .contribute__title{
 	margin-bottom: 3vh;
-	font-family: balboa-plus-fill, sans-serif;
+	font-family: 'balboa-plus-fill', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 2.5vw;
@@ -373,7 +375,7 @@
 }
 .contact__title{
 	margin-bottom: 2vh;
-	font-family: balboa-plus-fill, sans-serif;
+	font-family: 'balboa-plus-fill', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.8vw;
@@ -387,6 +389,20 @@
 	font-family: 'Roboto Slab', serif;
 	font-size: 1.5vw;
 }
+.social{
+    margin-top: 2.5vh;
+}
+.social-midia{
+    margin: 0 1vw;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2vw;
+    color: #FFF;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.facebook:hover{
+    color: #3b5998;
+}
 .contact__text{
 	margin: 4vh 0 0;
 	font-family: 'Roboto Slab', serif;
@@ -396,7 +412,7 @@
 	width: 26vw;
 	position: absolute;
 	left: calc(50% - 13vw);
-	bottom: 0;
+	bottom: 40px;
 }
 .footer__info{
 	width: 30vw;
@@ -404,7 +420,7 @@
 }
 .footer__title{
 	margin-bottom: 2vh;
-	font-family: balboa-plus-fill, sans-serif;
+	font-family: 'balboa-plus-fill', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.8vw;
@@ -413,6 +429,24 @@
 .footer__text{
 	font-family: 'Roboto Slab', serif;
 	font-size: 1.2vw;
+}
+.vnw{ 
+    height: 40px;
+	background: #f16337;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.vnw__text{
+    font-family: 'filson-soft', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+    color: #30368c;
+}
+.vnw__link{
+    color: #30368c;
 }
 @media (max-width: 768px){	
 	.overlay--green{
@@ -436,6 +470,10 @@
 	.contact__list-item{
 		font-size: 4.5vw;
 	}
+    .social-midia{
+        margin: 0 3vw;
+        font-size: 8vw;
+    }
 	.contact__text{
 		font-size: 4.5vw;
 	}
@@ -451,6 +489,7 @@
 		width: 30vw;
 		position: relative;
 		left: 10vw;
+        bottom: 0;
 	}
 	.footer__info{
 		width: 50vw;
@@ -462,4 +501,10 @@
 	.footer__text{
 		font-size: 4vw;	
 	}
+    .vnw__text{
+        font-size: 12px;
+    }
 }
+
+
+
