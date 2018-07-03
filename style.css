@@ -1,5 +1,6 @@
  /* IMPORTANDO FONTES */
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:500,700');
 /* RESET CSS */
 *{
 	margin: 0;
@@ -439,13 +440,14 @@
     align-items: center;
 }
 .vnw__text{
-    font-family: 'filson-soft', sans-serif;
-	font-style: normal;
+ 	font-family: 'Source Code Pro', monospace;
+ 	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
     color: #30368c;
 }
 .vnw__link{
+	font-weight: 700;
     color: #30368c;
 }
 @media (max-width: 768px){	
